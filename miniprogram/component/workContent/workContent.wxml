@@ -1,0 +1,11 @@
+<!--component/workContent/workContent.wxml-->
+<view class="content">
+  <image src="{{contentData.avatar}}"></image>
+  <view class="petName">
+    {{contentData.petName}}
+  </view>
+  <view class="news">
+    <text>{{contentData.content}}</text>
+    <text>{{contentData.date}}</text>
+  </view>
+</view>

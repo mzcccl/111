@@ -1,0 +1,12 @@
+<!--pages/news/news.wxml-->
+<!-- 搜索栏 -->
+<view class="search">
+  <view>
+    <image src="/static/work/search.png"></image>
+    <input type="text" placeholder="搜索对话" />
+  </view>
+</view>
+<!-- 内容 -->
+<scroll-view scroll-y="{{true}}" class="content">
+  <workContent wx:for="{{contentData}}" contentData="{{item}}" wx:key="index" />
+</scroll-view>
